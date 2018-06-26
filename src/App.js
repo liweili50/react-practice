@@ -7,6 +7,7 @@ class App extends Component {
           <div className="row">
             <div className="col-xs-1 col-xs-offet-11">
               <h1>hello world</h1>
+              <div>test</div>
             </div>
           </div>
         </div>
