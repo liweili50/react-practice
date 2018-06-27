@@ -22,7 +22,7 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="col-xs-1 col-xs-offet-11">
-            <Home name={'Max'} age={12} user={user}>
+            <Home name={'Max'} initalAge={12} user={user}>
             <p>i am child</p>
             </Home>
           </div>
