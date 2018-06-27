@@ -2,8 +2,20 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Home from './components/Home'
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      homeLink: "home"
+    }
+    this.onChangeLinkName = this.onChangeLinkName.bind(this)
+  }
   onGreet(age) {
     alert(age)
+  }
+  onChangeLinkName(newName) {
+    this.setState({
+      homeLink: newName
+    })
   }
   render() {
     const user = {
@@ -14,18 +26,17 @@ class App extends Component {
       <div className="container">
         <div className="row">
           <div className="col-xs-1 col-xs-offet-11">
-            <Header />
+            <Header homeLink={this.state.homeLink} />
           </div>
         </div>
         <div className="row">
           <div className="col-xs-1 col-xs-offet-11">
             <h1>hello world</h1>
-            <div>test</div>
           </div>
         </div>
         <div className="row">
           <div className="col-xs-1 col-xs-offet-11">
-            <Home name={'Max'} initalAge={12} user={user} greet={this.onGreet}>
+            <Home name={'Max'} initalAge={12} user={user} greet={this.onGreet} changeName={this.onChangeLinkName}>
             <p>i am child</p>
             </Home>
           </div>

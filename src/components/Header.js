@@ -5,7 +5,7 @@ class Header extends Component {
         <div className="container">
           <div className="row">
             <div className="col-xs-1 col-xs-offet-11">
-              <h1>header</h1>
+              <h1>{this.props.homeLink}</h1>
             </div>
           </div>
         </div>
