@@ -26,10 +26,9 @@ export default class Home extends Component {
   }
   handleChangeInput(event) {
     this.setState({inputValue: event.target.value});
-    this.props.changeName(this.state.inputValue)
+    this.props.changeName(event.target.value)
   }
   render() {
-    console.log(this.props)
     return (
         <div className="container">
           <div className="row">
