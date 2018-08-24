@@ -3,3 +3,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.App {
+  width: 600px;
+  margin: 0 auto;
+}
+.component-input{
+  box-sizing: border-box;
+  text-align: right;
+}
+.component-input>div{
+  width: 600px;
+  margin: 20px 0;
+} 
+.component-input>div span {
+  display: inline-block;
+  width: 80px;
+  vertical-align: top;
+}
+.component-input>div input,.component-input>div textarea{
+  width: 500px;
+}

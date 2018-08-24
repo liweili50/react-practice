@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Home from './components/Home'
+
+import ComponentApp from './components/CommentApp';
 class App extends Component {
   constructor() {
     super();
@@ -19,8 +21,8 @@ class App extends Component {
   }
   render() {
     const user = {
-      name:"Anna",
-      hobbies: ["sports","reading"]
+      name: "Anna",
+      hobbies: ["sports", "reading"]
     }
     return (
       <div className="container">
@@ -37,10 +39,11 @@ class App extends Component {
         <div className="row">
           <div className="col-xs-1 col-xs-offet-11">
             <Home name={'Max'} initalAge={12} user={user} greet={this.onGreet} changeName={this.onChangeLinkName}>
-            <p>i am child</p>
+              <p>i am child</p>
             </Home>
           </div>
         </div>
+        <ComponentApp />
       </div>
     );
   }
